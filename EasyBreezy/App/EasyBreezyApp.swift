@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct EasyBreezyApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(viewModel: DIContainer.shared.makeWeatherViewModel()).applyBackgroundColor()
         }
     }
 }
